@@ -4,8 +4,6 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    environment:
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
     volumes:
       - ./settings.js:/var/chatgpt-api/settings.js:cached
     ports:
